@@ -3,15 +3,15 @@
 #include <string>
 const int INF = 1e9;
 using namespace std;
+#define fio ios_base::sync_with_stdio(false); cin.tie(NULL);
 
 int main() {
+  fio;
   int H, W;
   cin >> H >> W;
   vector<string> S(H);
   for (int i = 0; i < H; ++i) {
-    for (int j=0; j < W; ++j) {
-      cin >> S[i][j];
-    }
+    cin >> S[i];
   }
 
   int ans = 0;
